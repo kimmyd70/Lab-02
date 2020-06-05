@@ -18,19 +18,47 @@ function HornedAnimal(animal) {
       $animalClone.find('p').text(this.description);
       $animalClone.removeClass('photo-template');
       $animalClone.attr('class', this.keyword);
+
   }
 
+  let animalKeywordArr = [];
+
+  
   HornedAnimal.readJson = () => {  
     $.ajax('./data/page-1.json')
-      .then(data => {
-        data.forEach(item => {
-          let animal= new HornedAnimal(item);
-          console.log(animal);
+    .then(data => {
+      let keywordsArr = new Set(animalKeywordArr);
+      data.forEach(item => {
+        let animal= new HornedAnimal(item);
+        //console.log(animal);
+          keywordsArr.add(animal.keyword);
           animal.render();
         });
+        generateDropDown(keywordsArr);
       });
-  };
-  
-  $(() => HornedAnimal.readJson());
+    };
+    
+    $(() => HornedAnimal.readJson());
+    
+
+  function generateDropDown (array){
+    array.forEach( item =>{
+    $('select').append(`<option value ="${item}">${item}</option>`);
+    });
+  }
+
+
+
+console.log(animalKeywordArr);
+//console.log(keywordsArr);
+
+
+//render menu options based off the keywordarray.  We are using 
+//the duplicate array until we can debug our Set method.
+//
+//create an option tag in the dropdown select
+
+
+
   
   
