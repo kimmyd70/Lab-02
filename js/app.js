@@ -8,15 +8,6 @@ function HornedAnimal(animal) {
     this.horns = animal.horns;
   }
 
-//   Dog.prototype.render = function () {
-//     let $dogClone = $('.dog-template').clone();
-//     $('main').append($dogClone);
-//     $dogClone.find('h2').text(this.name);
-//     $dogClone.find('img').attr('src', this.image_url);
-//     $dogClone.find('p').text(this.hobbies);
-//     $dogClone.removeClass('dog-template');
-//     $dogClone.attr('class', this.name);
-//   };
 //code referenced from Class-02 demo folder
   HornedAnimal.prototype.render = function(){
       let $animalClone = $('.photo-template').clone();
@@ -29,12 +20,7 @@ function HornedAnimal(animal) {
       $animalClone.attr('class', this.keyword);
   }
 
-  HornedAnimal.readJson = () => {
-//     const ajaxFormat = {
-//       method: 'get',
-//       dataType: 'json'
-//     };
-  
+  HornedAnimal.readJson = () => {  
     $.ajax('./data/page-1.json')
       .then(data => {
         data.forEach(item => {

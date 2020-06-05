@@ -11,9 +11,9 @@ Estimate of time to complete: 1.5hrs
 
 Start time: 5:53pm (15 min break)
 
-Finish time: 
+Finish time: 7:39
 
-Actual time needed to complete: 
+Actual time needed to complete: 1:47
 ```
 
 
@@ -27,6 +27,19 @@ How are we implementing it?
 Use AJAX, specifically $.ajax(), to read the provided JSON file.
 Each object should become a new instance of a constructor function. Refer to the data to determine the necessary properties.
 Use jQuery to make a copy of the HTML template of the photo component. For each object, fill in the duplicated template with its properties, then append the copy to the DOM.
+
+```
+Feature 2: Filter Images
+
+Estimate of time to complete: 30 min
+
+Start time: 7:45
+
+Finish time: 
+
+Actual time needed to complete: 
+```
+
 
 ## Feature #2: Filter images
 Why are we implementing this feature?
