@@ -23,27 +23,28 @@ function HornedAnimal(animal) {
       $('main').append($animalClone);
       $animalClone.find('h2').text(this.title);
       $animalClone.find('img').attr('src', this.image_url);
+      $animalClone.find('alt').attr('alt', this.title);
       $animalClone.find('p').text(this.description);
       $animalClone.removeClass('photo-template');
       $animalClone.attr('class', this.keyword);
   }
 
-  Dog.readJson = () => {
-    const ajaxSettings = {
-      method: 'get',
-      dataType: 'json'
-    };
+  HornedAnimal.readJson = () => {
+//     const ajaxFormat = {
+//       method: 'get',
+//       dataType: 'json'
+//     };
   
-    $.ajax('data.json', ajaxSettings)
+    $.ajax('./data/page-1.json')
       .then(data => {
         data.forEach(item => {
-          let dog = new Dog(item);
-          console.log(dog);
-          dog.render();
+          let animal= new HornedAnimal(item);
+          console.log(animal);
+          animal.render();
         });
       });
   };
   
-  $(() => Dog.readJson());
+  $(() => HornedAnimal.readJson());
   
   

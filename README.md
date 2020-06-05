@@ -9,7 +9,7 @@ Feature 1: Display Images
 
 Estimate of time to complete: 1.5hrs
 
-Start time: 5:53pm
+Start time: 5:53pm (15 min break)
 
 Finish time: 
 
