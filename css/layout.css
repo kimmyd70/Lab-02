@@ -9,7 +9,7 @@ main{
     overflow:hidden;
 }
 
-.card {
+div {
     float: left;
     margin: 1em auto;
 }

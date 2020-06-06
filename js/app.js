@@ -17,26 +17,24 @@ function HornedAnimal(animal) {
       $animalClone.find('alt').attr('alt', this.title);
       $animalClone.find('p').text(this.description);
       $animalClone.removeClass('photo-template');
-      $animalClone.attr('class', this.keyword);
-      
-      
-
-
-  }
-
-  
-  let animalKeywordArr = [];
-  
-  HornedAnimal.readJson = () => {  
-    $.ajax('./data/page-1.json')
-    .then(data => {
-      let keywordsArr = new Set(animalKeywordArr);
-      data.forEach(item => {
-        let animal= new HornedAnimal(item);
-        //console.log(animal);
+      $animalClone.attr('class', this.keyword);      
+    }
+    
+    
+    let animalKeywordArr = [];
+    
+    HornedAnimal.readJson = () => {  
+      $.ajax('./data/page-1.json')
+      .then(data => {
+        let keywordsArr = new Set(animalKeywordArr);
+        data.forEach(item => {
+          let animal= new HornedAnimal(item);
+          //console.log(animal);
           keywordsArr.add(animal.keyword);
           animal.render();
         });
+        $('.photo-template').remove();
+        
         generateDropDown(keywordsArr);
       });
     };
