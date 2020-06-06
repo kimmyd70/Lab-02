@@ -5,20 +5,25 @@
     <head>
     <title>The Gallery of Horns</title>
     <link href = "./css/styles.css" rel = "stylesheet" type = "text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header>
       <h1>The Gallery of Horns</h1>
-      <select>
-        <option value="reset" disabled selected>Filter by Keyword</option>
-      </select>
+      <form>
+        <select class = "dropdown">
+          <option value="" >Filter by Keyword</option>
+        </select>
+      </form>
     </header>
     <main>
       <section class="photo-template">
-        <h2></h2>
-        <img src="" alt="">
-        <p></p>
+        <div class= "card">
+          <h2></h2>
+          <img src="" alt="" class = "thumbnail">
+          <p class = "describe"></p>
+        </div>
       </section>
     </main>
     <footer>
