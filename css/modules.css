@@ -25,21 +25,21 @@ header {
 }
 
 .thumbnail {
-    height: 200px;
-    max-width: 250px;
+    max-height: 200px;
+    max-width: 200px;
 }
 
+.card {
+    height: 300px;
+    width: 300px;
+}
 
-/* .photo-template {
-    float: right;
-} */
 
 .describe {
     max-width: 220px;
     font-size: 14px;
     /* text-align: center; */
     margin: 1em 0 3em;
-    clear: right;
 }
 
 footer {
