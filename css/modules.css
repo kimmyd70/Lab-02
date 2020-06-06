@@ -2,7 +2,7 @@
 
 h1 {
     font-family: 'Tangerine', cursive;
-    font-size: 60px;
+    font-size: 100px;
     /* text-align: center; */
 }
 
@@ -47,4 +47,11 @@ footer {
     margin: 4em auto;
     border-top: .5px solid gray;
     padding-top: 2em;
+}
+
+
+@media only screen and (max-width: 625px){
+    h1 {
+        font-size: 50px;
+    }
 }

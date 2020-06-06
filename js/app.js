@@ -19,6 +19,7 @@ function HornedAnimal(animal) {
       $animalClone.removeClass('photo-template');
       $animalClone.attr('class', this.keyword);
       
+      
 
 
   }
