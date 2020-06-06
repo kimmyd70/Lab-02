@@ -1,0 +1,50 @@
+
+
+h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 60px;
+    /* text-align: center; */
+}
+
+h2 {
+    font-family: 'Tangerine', cursive;
+    font-size: 30px;
+    margin: 0 1em .5em;
+    max-width: 220px;
+}
+
+header {
+    margin: 2em auto;
+    text-align: center;
+}
+
+.dropdown {
+    width: 200px;
+    margin: 2em auto;
+    font-size: 14px;
+}
+
+.thumbnail {
+    height: 200px;
+    max-width: 250px;
+}
+
+
+/* .photo-template {
+    float: right;
+} */
+
+.describe {
+    max-width: 220px;
+    font-size: 14px;
+    /* text-align: center; */
+    margin: 1em 0 3em;
+    clear: right;
+}
+
+footer {
+    width: 90%;
+    margin: 4em auto;
+    border-top: .5px solid gray;
+    padding-top: 2em;
+}
