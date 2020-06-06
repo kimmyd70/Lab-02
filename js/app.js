@@ -19,6 +19,7 @@ function HornedAnimal(animal) {
       $animalClone.removeClass('photo-template');
       $animalClone.attr('class', this.keyword);
 
+
   }
 
   let animalKeywordArr = [];
@@ -49,7 +50,7 @@ function HornedAnimal(animal) {
 
 
 
-console.log(animalKeywordArr);
+// console.log(animalKeywordArr);
 //console.log(keywordsArr);
 
 
