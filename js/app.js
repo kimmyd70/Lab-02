@@ -24,8 +24,8 @@ function HornedAnimal(animal) {
 
   }
 
+  
   let animalKeywordArr = [];
-
   
   HornedAnimal.readJson = () => {  
     $.ajax('./data/page-1.json')
