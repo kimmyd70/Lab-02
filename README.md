@@ -35,9 +35,9 @@ Estimate of time to complete: 30 min
 
 Start time: 7:45
 
-Finish time: 
+Finish time: 9:30....plus 30 min on Saturday
 
-Actual time needed to complete: 
+Actual time needed to complete: 2:15
 ```
 
 
@@ -50,6 +50,18 @@ Given that a user clicks on the dropdown menu When the user selects one of the o
 How are we implementing it?
 Create a `<select>` element which contains unique `<option>` elements extracted dynamically from the JSON file, one for each keyword.
 Use an event handler to respond when the user chooses an option from the select menu. Hide all of the images, then show those whose keyword matches the option chosen.
+
+```
+Feature 2: Filter Images
+
+Estimate of time to complete: 45 min
+
+Start time: 1015
+
+Finish time: 1100
+
+Actual time needed to complete: 45 min (outside)
+```
 
 ## Feature #3: Style the application
 Why are we implementing this feature?
