@@ -48,6 +48,18 @@ function HornedAnimal(animal) {
     });
   }
 
+  let $dropdown = $('.dropdown');
+  $dropdown.on('change', filterKeywords);
+
+  function filterKeywords(){
+    let choice = $(this).val();
+    if (choice){
+      $('section').hide();
+      $(`.${choice}`).fadeIn();
+    }
+
+  }
+
 
 
 // console.log(animalKeywordArr);
