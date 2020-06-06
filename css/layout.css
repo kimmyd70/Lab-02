@@ -5,13 +5,13 @@ header {
 }
 main{
     width: 90%;
-    margin: 1em;
+    margin: 1em auto;
     overflow:hidden;
 }
 
 .card {
     float: left;
-    margin: 1em;
+    margin: 1em auto;
 }
 
 
